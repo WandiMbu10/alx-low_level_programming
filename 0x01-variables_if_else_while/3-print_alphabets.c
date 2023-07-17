@@ -5,14 +5,21 @@
  * Description: 'print alphabet lowercase and uppercase'
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	char alph[26] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	int i;
+	int lowercase = 'a';
+	int uppercase = 'A';
 
-	for (i = 0; i < 52; i++)
+	while (lowercase <= 'z')
 	{
-		putchar(alph[i]);
+		putchar(lowercase);
+		lowercase += 1;
+	}
+	while (uppercase <= 'z')
+	{
+		putchar(uppercase);
+		uppercase += 1;
 	}
 	putchar('\n');
 	return (0);
