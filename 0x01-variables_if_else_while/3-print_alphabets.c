@@ -2,7 +2,7 @@
 
 /**
  * main - Entry point
- * Description: 'print alphabet lowercase and uppercase'
+ *
  * Return: Always 0 (Success)
  */
 
@@ -16,7 +16,7 @@ int main(void)
 		putchar(lowercase);
 		lowercase += 1;
 	}
-	while (uppercase <= 'z')
+	while (uppercase <= 'Z')
 	{
 		putchar(uppercase);
 		uppercase += 1;
