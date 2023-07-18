@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * _putchar - a program that prints the alphabet, in lowercase, followed by a new line
- * Return: Always 0 
+ * main - Entry point
+ * _putchar - a program that prints the alphabet
+ * Return: Always 0
  */
 int main(void)
 {
