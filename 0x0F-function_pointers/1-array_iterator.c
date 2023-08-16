@@ -4,13 +4,14 @@
 /**
  * array_iterator - a function that executes a function
  * @array: array
- * @size: size 
+ * @size: size
  * @action: pointer to print
  * Return: void
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	unsigned int i;
+
 	if (array == NULL || action == NULL)
 		return;
 
