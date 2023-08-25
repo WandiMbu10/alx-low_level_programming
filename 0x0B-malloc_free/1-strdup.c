@@ -1,17 +1,15 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-
+#include "main.h"
 /**
- * _strdup - returns a pointer to a newly allocated space
+ * _strdup - duplicate to new memory space location
  * @str: char
- * Return: NULL
+ * Return: 0
  */
-
 char *_strdup(char *str)
 {
-	char *j;
-	int i, 1 = 0;
+	char *aaa;
+	int i, r = 0;
 
 	if (str == NULL)
 		return (NULL);
@@ -19,13 +17,13 @@ char *_strdup(char *str)
 	while (str[i] != '\0')
 		i++;
 
-	j = malloc(sizeof(char) * (i + 1));
+	aaa = malloc(sizeof(char) * (i + 1));
 
-	if (j == NULL)
+	if (aaa == NULL)
 		return (NULL);
 
-	for (1 = 0; str[1]; 1++)
-		j[1] = str[1];
+	for (r = 0; str[r]; r++)
+		aaa[r] = str[r];
 
-	return (j);
+	return (aaa);
 }
